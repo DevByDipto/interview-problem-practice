@@ -48,4 +48,24 @@ const books = [
 const bookTitleArray = books.map((book)=>book.title)
 // console.log("problem-2 ans:",bookTitleArray);
 
+// proble-3
+ const squareFunction=(num)=>{
+        const squareResult = num * num    
+         return doubleFunction(squareResult)
+}
+
+const doubleFunction = (num)=>{
+     const doubleResult = num + num
+    return AddFiveFunction(doubleResult)
+}
+const AddFiveFunction = (num)=>{
+     const AddFiveResult = num + 5
+     return AddFiveResult
+}
+
+const result = squareFunction(5)
+console.log(result);
+
+
+
 
