@@ -64,8 +64,31 @@ const AddFiveFunction = (num)=>{
 }
 
 const result = squareFunction(5)
-console.log(result);
+// console.log(result);
 
+// problem-4
 
+const cars = [
+    {
+        make:"dipto",
+         mode:"hunda",
+         year:new Date(2023, 11, 1) 
+    },
+    {
+        make:"dipto",
+         mode:"hunda",
+         year:new Date(2023, 0, 10)
+    },
+    {
+        make:"dipto",
+         mode:"hunda",
+         year:new Date(2026, 1, 5)
+    },
+]
 
+const carsSortedFunction=(carsArr)=>{
+   return cars.sort((a, b) => a.year - b.year)
+}
 
+const probleFourresult = carsSortedFunction(cars)
+// console.log(probleFourresult);
