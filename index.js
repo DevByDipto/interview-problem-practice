@@ -92,3 +92,40 @@ const carsSortedFunction=(carsArr)=>{
 
 const probleFourresult = carsSortedFunction(cars)
 // console.log(probleFourresult);
+
+// problem -5
+{
+    const persons = [
+    {
+        name:"dipto",
+        age:23,
+        gender:"male"
+    },
+    {
+        name:"sneha",
+        age:13,
+        gender:"female"
+    },
+    {
+        name:"joy",
+        age:33,
+        gender:"male"
+    },
+    {
+        name:"ripon",
+        age:29,
+        gender:"male"
+    }
+]
+
+const updatePersonFunction = (name)=>{
+for (const person of persons) {
+    if(person.name === name){
+person.age= 5
+    }
+}
+}
+
+updatePersonFunction("ripon")
+console.log("problem-5 ans:",persons);
+}
