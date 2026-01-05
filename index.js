@@ -112,22 +112,47 @@ console.log("problem-5 ans:",persons);
 
 // problem-6
 {
-    // Function to sum all even numbers
+   
 const sumEvenNumbers = (numbers) => {
     return numbers.reduce((acc, curr) => {
         if (curr % 2 === 0) {
-            return acc + curr; // যদি even হয়, যোগ করো
+            return acc + curr; 
         } else {
-            return acc; // যদি odd হয়, acc change না করো
+            return acc; 
         }
-    }, 0); // initial value = 0
+    }, 0);
 };
 
-// Example array
+
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
 
-// Call function
+
 const result = sumEvenNumbers(numbers);
 console.log("Sum of even numbers:", result);
+
+}
+
+// problem-7
+{
+    
+const isLeapYear = (year) => {
+    if (year % 400 === 0) {
+        return true; 
+    } else if (year % 100 === 0) {
+        return false; 
+    } else if (year % 4 === 0) {
+        return true; 
+    } else {
+        return false; 
+    }
+};
+
+
+const year = 2024;
+if(isLeapYear(year)) {
+    console.log(year + " is a leap year 🎉");
+} else {
+    console.log(year + " is not a leap year");
+}
 
 }
